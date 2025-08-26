@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    
+    <!-- Primary Meta Tags -->
+    <title>{{ page.title }} - {{ page.description }}</title>
+    <meta name="title" content="{{ page.title }} - {{ page.description }}">
+    <meta name="description" content="Holy Hues is your pocket Bible with a creative twist. Browse verses with intuitive swipes, explore multiple translations, and create beautiful verse wallpapers.">
+    <meta name="keywords" content="bible app, daily bible verse, christian app, scripture wallpapers, holy hues, bible study tool, pocket bible, bible verses, inspirational verses, custom bible backgrounds, bible with fonts, creative bible, bible translations app, kjv bible, niv bible, bible wallpapers, christian wallpapers, bible quotes app, daily scripture, bible with customization, share bible verses, bible app with colors, bible chapters, bible with gradients, bible inspiration app, christian daily devotion, bible reading app, mobile bible, faith app, bible on the go, personalized scripture">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="Holy Hues is your pocket Bible with a creative twist. Browse verses with intuitive swipes, explore multiple translations, and create beautiful verse wallpapers.">
+    <meta property="og:image" content="{{ site.url }}/assets/images/og.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="twitter:title" content="{{ page.title }}">
+    <meta property="twitter:description" content="Holy Hues is your pocket Bible with a creative twist. Browse verses with intuitive swipes, explore multiple translations, and create beautiful verse wallpapers.">
+    <meta property="twitter:image" content="{{ site.url }}/assets/images/og.jpg">
+    
+    <!-- iOS Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="{{ page.title }}">
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/logo.png">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#5261FF">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/images/logo.png">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+    <script src="https://kit.fontawesome.com/53df3a2a07.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body class="{% if page.custom_class %}{{ page.custom_class }}{% endif %}">
+
+    <main>
+        <div class="hero">
+            <img src="/assets/images/hero-1.png" alt="Holy Hues" />
+        </div>
+        {{ content }}
+    </main>
+    
+</body>
+</html> 
