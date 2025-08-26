@@ -17,6 +17,17 @@ main {
     min-height: 100vh;
     position: relative;
 
+    &:before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10rem;
+        background: linear-gradient(to bottom, var(--primary-color), transparent);
+        z-index: -1;
+    }
+
     &:after {
         content: "";
         position: fixed;
@@ -61,8 +72,8 @@ main {
     }
 
     @media (max-width: 600px) {
-        width: 100vh;
-        height: 100vh;
+        width: 130vh;
+        height: 130vh;
         top: 30%;
     }
 
@@ -74,6 +85,7 @@ main {
 }
 
 section {
+    transition: all 0.2s ease-in-out;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -92,10 +104,16 @@ section {
     -webkit-backdrop-filter: blur(1rem);
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
-    border: 2px solid rgba(255, 255, 255, 0.4);
     border-bottom: none;
-    box-shadow: 0 -1rem 3rem 0 var(--primary-color);
+    box-shadow: 
+        inset 0 2px 4px 0 white,
+        inset 0 2rem 2rem 0 var(--tertiary-color),
+        0 -1rem 3rem 0 var(--primary-color);
     animation: fade-in 0.4s ease-in-out;
+
+    &:hover {
+        padding-bottom: 4rem;
+    }
 
     @media (max-width: 600px) {
         flex-direction: column;
@@ -111,20 +129,20 @@ section {
         &:first-child {
             flex: 1;
         }
-    }
-}
 
-.intro {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-
-    img {
-        width: 4rem;
-        height: 4rem;
-        object-fit: cover;
-        border-radius: 1rem;
-        box-shadow: 0 1rem 2rem 0 var(--primary-color);
+        div {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        
+            img {
+                width: 4rem;
+                height: 4rem;
+                object-fit: cover;
+                border-radius: 1rem;
+                box-shadow: 0 1rem 2rem 0 var(--primary-color);
+            }
+        }
     }
 }
 

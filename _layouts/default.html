@@ -7,21 +7,25 @@
     <!-- Primary Meta Tags -->
     <title>{{ page.title }} - {{ page.description }}</title>
     <meta name="title" content="{{ page.title }} - {{ page.description }}">
-    <meta name="description" content="Holy Hues is your pocket Bible with a creative twist. Browse verses with intuitive swipes, explore multiple translations, and create beautiful verse wallpapers.">
-    <meta name="keywords" content="bible app, daily bible verse, christian app, scripture wallpapers, holy hues, bible study tool, pocket bible, bible verses, inspirational verses, custom bible backgrounds, bible with fonts, creative bible, bible translations app, kjv bible, niv bible, bible wallpapers, christian wallpapers, bible quotes app, daily scripture, bible with customization, share bible verses, bible app with colors, bible chapters, bible with gradients, bible inspiration app, christian daily devotion, bible reading app, mobile bible, faith app, bible on the go, personalized scripture">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="keywords" content="{{ site.keywords }}">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:description" content="Holy Hues is your pocket Bible with a creative twist. Browse verses with intuitive swipes, explore multiple translations, and create beautiful verse wallpapers.">
+    <meta property="og:description" content="{{ site.description }}">
     <meta property="og:image" content="{{ site.url }}/assets/images/og.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Holy Hues - Your pocket Bible with a creative twist">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
     <meta property="twitter:title" content="{{ page.title }}">
-    <meta property="twitter:description" content="Holy Hues is your pocket Bible with a creative twist. Browse verses with intuitive swipes, explore multiple translations, and create beautiful verse wallpapers.">
+    <meta property="twitter:description" content="{{ site.description }}">
     <meta property="twitter:image" content="{{ site.url }}/assets/images/og.jpg">
     
     <!-- iOS Meta Tags -->
@@ -49,5 +53,6 @@
         {{ content }}
     </main>
     
+    <script src="{{ site.baseurl }}/assets/js/script.js"></script>
 </body>
 </html> 
