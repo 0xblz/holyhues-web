@@ -97,13 +97,20 @@ section {
     box-shadow: 0 -1rem 3rem 0 var(--primary-color);
     animation: fade-in 0.4s ease-in-out;
 
+    @media (max-width: 600px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     aside {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 0.5rem;
-        flex: 1;
-        min-width: 200px;
+
+        &:first-child {
+            flex: 1;
+        }
     }
 }
 
